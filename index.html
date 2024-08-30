@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="contact-form">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <div class="name">
+                <div class="form-details first-name">
+                    <div class="firstname">
+                        <label for="first-name">First Name <span class="required">*</span></label>
+                        <input type="text" name="first-name" id="first-name">
+                        <p class="form-alert">This field is required</p>
+                    </div>
+                </div>
+    
+                <div class="form-details last-name">
+                    <div class="lastname">
+                        <label for="first-name">Last Name <span class="required">*</span></label>
+                        <input type="text" name="last-name" id="last-name">
+                        <p class="form-alert">This field is required</p>
+                    </div>
+                </div>
+    
+            </div>
+            
+            <div class="form-details email">
+                <div class="email">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" name="email" id="email">
+                    <p class="form-alert">Enter a valid email</p>
+                </div>
+            </div>
+
+                <div class="form-details quaries">
+                    <label for="query" class="query">Query Type <span class="required">*</span></label>
+                    
+                    <div class="queries">
+                        <div class="radio-inputs query-one">
+
+                                <input type="radio" name="query-type" id="general-enquiry" value="General Enquiry">
+                                <label for="general-enquiry">General Enquiry</label>
+                        </div>
+        
+                        <div class="radio-inputs query-two">
+                           
+                                <input type="radio" name="query-type" id="support-request" value="Support Request">
+                                <label for="support-request">Support Request</label>
+                          
+                        </div>                  
+                    </div>
+                            
+                    <p class="form-alert">Select a query type</p>
+                </div>
+            
+            
+
+            <div class="form-details message">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea name="message" id="message" rows="5"></textarea>
+                <p class="form-alert">message area cannot be empty</p>
+            </div>
+            
+            <div class="form-details consent-div">
+                <input type="checkbox" id="consent" name="consent">
+                <label for="consent">I consent to being contacted by the team <span class="required">*</span></label>
+                <p class="form-alert">You need to check this box</p>
+            </div>
+            
+
+            <div class="form-details submit-button">
+                <button id="submit-form" class="submit-form" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

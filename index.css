@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 15px;
+    font-family: arial;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: rgb(177, 253, 228);
+}
+
+.contact-form{
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+h1{
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: rgb(65, 63, 63);
+}
+
+input[type='text'],
+input[type='email'],
+textarea{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+input:focus,
+textarea:focus{
+    outline: 1px solid green;
+    border: 1px solid green
+}
+
+input[type='text'].form-error
+input[type='email'].form-error{
+    border: 1px solid red;
+}
+.required-input{
+    color: green;
+}
+.form-alert{
+    display: none;
+    color: red;
+    margin-top: 5px;
+}
+.form-alert.form-error{
+    display: block;
+}
+.form-details{
+    margin-bottom: 20px;
+}
+.name{
+    display: flex;
+    gap: 10px;
+}
+.radio-select{
+    display:flex;
+    gap: 10px;
+}
+
+.queries{
+    display: flex;
+    gap: 10px;
+}
+
+.radio-inputs{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    border: 1px solid grey;
+    padding: 5px 20px;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-form{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    background: rgb(8, 142, 93);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.submit-form:hover{
+    background-color: rgb(44, 167, 122);
+}
+
+input{
+    accent-color: green;
+    cursor: pointer;
+}
